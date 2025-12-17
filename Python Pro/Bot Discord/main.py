@@ -28,7 +28,7 @@ async def pasw(ctx):
 
 @bot.command()
 async def meme(ctx):
-    with open('bot Discord\images\meme1.png', 'rb') as f:
+    with open('images\meme1.png', 'rb') as f:
         #Vamos armazenar o arquivo convertido da biblioteca do Discord nesta variável!
         picture = discord.File(f)
     # Podemos então enviar esse arquivo como um parâmetro
@@ -36,8 +36,8 @@ async def meme(ctx):
 
 @bot.command()
 async def memes(ctx):
-    img_name = random.choice(os.listdir('bot Discord\images'))
-    with open(f'bot Discord\images/{img_name}', 'rb') as f:
+    img_name = random.choice(os.listdir('images'))
+    with open(f'images/{img_name}', 'rb') as f:
         picture = discord.File(f)
 
     await ctx.send(file=picture)
