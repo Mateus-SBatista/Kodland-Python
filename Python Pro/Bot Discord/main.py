@@ -123,6 +123,7 @@ async def get_pokemon_info(ctx, nome_pokemon: str):
     else:
         await ctx.send(f"⚠️ Ocorreu um erro ao buscar informações (Status Code: {resposta.status_code}).")
 
+#API DE ANIME
 @bot.command(name='anime', help='Busca informações de um anime na Kitsu API. Uso: $anime [título do anime]')
 async def get_anime_info_sem_erros(ctx, *, search_query: str):
     """
@@ -184,4 +185,4 @@ async def get_anime_info_sem_erros(ctx, *, search_query: str):
         # Erros como 500 (Erro Interno do Servidor) ou 503 (Serviço Indisponível)
         await ctx.send(f"⚠️ Ocorreu um erro interno no servidor da Kitsu. Status: {resposta.status_code}")
 
-bot.run(settings["TOKEN"])
+bot.run("TOKEN") #<-INSIRA O SEU TOKEN
