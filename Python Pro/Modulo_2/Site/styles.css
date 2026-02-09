@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Verdana, sans-serif; /* Fontes utilizadas */
+    font-size: 11pt; /* Tamanho da fonte <p></p> */
+    background-color: #f0f0f0; /* A cor do plano de fundo*/
+    color: #333; /* A cor do texto*/
+}
+
+h1{
+    color: #00a800; /* A cor do cabeçalho*/
+    font-size: 24pt; /* O tamanho da fonte do cabeçalho*/
+    font-family: Georgia, Times, serif; /* A fonte utilizada no cabeçalho */
+}
+
+@keyframes color-change {
+  0%   { color: blue; }
+  50%  { color: red; }
+  100% { color: rgb(0, 255, 149); }
+}
+
+h1 {
+  animation: color-change 3s infinite;
+}
